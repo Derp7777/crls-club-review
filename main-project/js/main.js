@@ -100,8 +100,8 @@ function navFunction(elm) {
     document.getElementById("time").style.display = "none";
 
 
-    var classList = document.getElementsByClassName("navBtn");
-    for (i = 0; i < classList.length; i++) {
+    const classList = document.getElementsByClassName("navBtn");
+    for (let i = 0; i < classList.length; i++) {
         classList[i].style.border = "none";
     }
 
@@ -125,8 +125,8 @@ function navFunction(elm) {
     /*
     Ask other clubs to send an image they want to go on the site as well as the description, meet times, advisor, and room num.
     */
-    for (i = 1; i < obj[elm.id].length + 1; i++) {
-        var newSec = document.getElementById('knownSec').cloneNode(true);
+    for (let i = 1; i < obj[elm.id].length + 1; i++) {
+        const newSec = document.getElementById('knownSec').cloneNode(true);
         newSec.setAttribute('id', i);
         newSec.setAttribute('class', 'newElm'); /*Used to delete the elms when new tab is clicked*/
         newSec.style.display = "block";
