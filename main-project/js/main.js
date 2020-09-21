@@ -86,6 +86,9 @@ var obj = {
         ["Spanish Club", "Eydie Ortiz", "2620", ""]]
 };
 
+var testJson = JSON.parse(CLUBSJSON);
+console.log(testJson);
+
 var desc = "";
 var time = "";
 
