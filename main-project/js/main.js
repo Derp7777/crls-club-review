@@ -688,17 +688,15 @@ function navFunction(elm) {
         newSec.setAttribute('class', 'newElm'); /*Used to delete the elms when new tab is clicked*/
         newSec.style.display = "block";
 
-
-
-
-            newSec.querySelector("h2").innerHTML = clubsArray[i].club;
-            newSec.querySelector("h3").innerHTML = "Advisor: " + clubsArray[i].advisor;
-            newSec.querySelector("h4").innerHTML = "Room: " + clubsArray[i].location;
-            /*newSec.querySelector("img").src = "Images/" + obj.ela[i - 1][3];*/
-            if (clubsArray[i].hasOwnProperty('desc')) {
-                newSec.querySelector("#desc").innerHTML = clubsArray[i].desc;
-                newSec.querySelector("#time").innerHTML = clubsArray[i].time;
-            }
+        // display the club
+        newSec.querySelector("h2").innerHTML = clubsArray[i].club;
+        newSec.querySelector("h3").innerHTML = "Advisor: " + clubsArray[i].advisor;
+        newSec.querySelector("h4").innerHTML = "Room: " + clubsArray[i].location;
+        /*newSec.querySelector("img").src = "Images/" + obj.ela[i - 1][3];*/
+        if (clubsArray[i].hasOwnProperty('desc')) {
+            newSec.querySelector("#desc").innerHTML = clubsArray[i].desc;
+            newSec.querySelector("#time").innerHTML = clubsArray[i].time;
+        }
         document.getElementById("content").appendChild(newSec);
     }
 }
